@@ -26,7 +26,7 @@ Error generating stack: `+e.message+`
   border: 2px solid #9ca3af;
   margin: 40px;
   padding: 20px;
-  background: #e5e7eb;
+  background: #e5e7ebef;
 `,_r=Kn.h1`
   text-align: center;
   color: #2b2b2b;
