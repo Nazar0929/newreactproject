@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   border: 2px solid #9ca3af;
   margin: 40px;
   padding: 20px;
-  background: #e5e7eb;
+  background: #e5e7ebef;
 `;
 
 export const Title = styled.h1`
