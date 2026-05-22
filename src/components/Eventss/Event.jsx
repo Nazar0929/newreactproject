@@ -4,6 +4,9 @@ import { Card, EventTitle, Row } from "./Eventstyled";
 import { FaMapMarkerAlt, FaUser, FaClock } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 
+import { formatDate } from '../utils/formatdate';
+import { formatHoursDistance } from "../utils/formatDistance";
+
 function Event({ name, start, end, location, speaker }) {
   return (
     <Card>
@@ -15,10 +18,10 @@ function Event({ name, start, end, location, speaker }) {
         <FaUser /> {speaker}
       </Row>
       <Row>
-        <MdDateRange  /> {start} 
+        <MdDateRange  /> {formatDate(start)} 
       </Row>
       <Row>
-        <FaClock  />  {end}
+        <FaClock  />  {formatHoursDistance(start, end)}
       </Row>
     </Card>
   );
